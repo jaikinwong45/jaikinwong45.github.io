@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaikin Wong | Portfolio</title>
+    
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Light Mode (Default) */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, blue, red, red, red ,red);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background: linear-gradient(to bottom, darkblue, darkred,darkred, darkred, darkred);
+            color: white;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        img{
+          width: 50px;
+          height: 50px;
+        }
+
+        
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            margin: 40px 0;
+        }
+
+        ul, ol {
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        /* Button */
+        button {
+            background-color: beige;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+        @keyframes typing {
+    from { width: 0; }
+    to { width: 90%; }
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Lab1picture.png" alt="Jaikin Wong Profile Picture">
+        <h1 class="typing">Welcome to My Website!</h1>
+    </header>
+
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#work">Work Experience</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+        <a href="#biography">Biography</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <section id="biography">
+        <h2>Biography</h2>
+        <p>Hi! I'm Jaikin, a passionate student in automation and process control engineering. 
+          I have hands-on experience in industrial automation, instrumentation, and PLC programming. 
+          I'm currently exploring web development and love working on creative projects that combine 
+          technology with real-world applications. In my free time, I enjoy tinkering with hardware, 
+          learning about emerging tech, and exploring new places.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>High School:</strong> Westmount High School</p>
+        <p><strong>College:</strong> Mohawk College</p>
+        <p><strong>University:</strong> McMaster University - Automation Engineering</p>
+    </section>
+
+    <section id="work">
+        <h2>Work Experience</h2>
+        <h3>Canadian Tire <a href="https://www.canadiantire.ca/en.html" target="_blank">(Website)</a></h3>
+        <ul>
+            <li>Filled Batteries</li>
+            <li>Stocked shelves</li>
+            <li>Helped customers with questions</li>
+        </ul>
+        
+        <h3>Apple <a href="https://www.apple.com" target="_blank">(Website)</a></h3>
+        <ul>
+            <li>Troubleshoot iPhones</li>
+            <li>Sold iPhones</li>
+            <li>Booked Genius Bar appointments</li>
+        </ul>
+        
+        <h3>Realtor <a href="https://www.realtor.ca/on/toronto/real-estate" target="_blank">(Website)</a></h3>
+        <ul>
+            <li>Built furniture</li>
+            <li>Moved furniture inside houses/apartments</li>
+            <li>Took photos of furnished spaces</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ol>
+            <li><strong>Cooking</strong> - I enjoy cooking proteins like chicken and steak...</li>
+            <li><strong>Sports and Art</strong> - I enjoy playing basketball and tennis...</li>
+            <li><strong>Professional Associations</strong>I am a member of the Automation Technology Society, participating in events and discussions to stay updated on the latest advancements in automation.</li>
+            <li><strong>CAD Design Club</strong> - I participate in a CAD design club...</li>
+        </ol>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Check out this Calulator i made with C++ <a href="https://github.com/jaikinwong45/Sweet-Calculator" target="_blank">Source Code</a></p>
+      <p>Check out this snakegame I made with python <a href="https://github.com/jaikinwong45/snakegame" target="_blank">Source Code</a></p>
+      <p>Check out this Autocad floor plan <a href="https://drive.google.com/drive/folders/17KTUaMgVWAxNqkx5BuoR6KERsqZjR2Sw" target="_blank">Source Code</a></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <img src="C++_image.png" alt="C++">
+        <img src="AutoCAD_image.png" alt="CAD">
+        <img src="Python_image.png" alt="Python">
+        <img src="Sql_image.png" alt="SQL">
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:jaikinwong0405@gmail.com">jaikinwong0405@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jaikinwong/" target="_blank">LinkedIn Profile</a></p>
+    </section>
+    <footer>
+        &copy; 2025 Jaikin Wong. All rights reserved.
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            let body = document.body;
+            body.classList.toggle("dark-mode");
+
+            // Save preference in localStorage
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        }
+
+        // Check user preference on page load
+        if (localStorage.getItem("darkMode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+
+</body>
+</html>
